@@ -301,12 +301,14 @@ Features
 .features {
     display: flex;
     flex-wrap: wrap;
+    gap: 24px;
     max-width: 1024px;
     align-items: center;
 }
 
 .feature {
-    width: calc(100% / 3);
+    flex: 1 1 280px;
+    min-width: 280px;
 }
 
 .feature__row {
@@ -583,8 +585,10 @@ Pricing
     display: flex;
     flex-direction: row;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
+    flex-wrap: wrap;
+    gap: 24px;
 }
 
 .plan {
@@ -1097,7 +1101,7 @@ MEDIA
 */
 
 @media(max-width: 1280px) {
-    header .row {
+    .header__row {
         align-items: flex-end;
     }
 }
@@ -1107,12 +1111,25 @@ MEDIA
     .btn__menu {
         display: block;
     }
-    header .row {
+    .header__row {
         flex-direction: column;
         align-items: center;
+        gap: 24px;
+    }
+    .header__description,
+    .header__img--wrapper {
+        width: 100%;
+        max-width: 640px;
+    }
+    .nav__links {
+        flex-wrap: wrap;
+        gap: 8px;
     }
     footer {
         padding: 80px 32px;
+    }
+    .feature {
+        width: calc(100 / 2);
     }
 }
 
@@ -1139,7 +1156,13 @@ MEDIA
         margin: 8px 0;
         padding-bottom: 4px;
     }
+    .nav__links {
+        justify-content: center;
+    }
     main {
         margin-bottom: 80px;
+    }
+    .feature {
+        width: 100%
     }
 }
