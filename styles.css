@@ -1187,6 +1187,10 @@ MEDIA
 
 @media (max-width: 1024px) {
 
+    .nav__links {
+        display: none;
+    }
+
     .btn__menu {
         display: block;
     }
@@ -1227,12 +1231,6 @@ MEDIA
 
     .quality__img--wrapper {
         margin-right: 16px;
-    }
-}
-
-@media(max-width: 1000px) {
-    .btn__menu {
-        display: block;
     }
 }
 
