@@ -1409,6 +1409,7 @@ MEDIA
     .footer__copyright, .footer__socials {
         margin-top: 32px;
     }
+}
 
 
 @media(max-width: 640px) {
@@ -1451,5 +1452,4 @@ MEDIA
         margin-right: 0px;
         margin-bottom: 16px;
     }
-}
 }
